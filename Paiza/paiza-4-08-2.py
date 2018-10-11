@@ -1,4 +1,4 @@
-# coding: utf-8
+﻿# coding: utf-8
 
 '''
 演習課題「おみくじを作ろう」
@@ -18,14 +18,29 @@
 ['大吉', '中吉', '吉', '凶']
 大吉
 '''
+# coding: utf-8
+
 # おみくじプログラム
 
+
 import random
-line = input().rstrip()
+
+line = input().rstrip().split(",")
+
 
 # 今回は自力で全部書いてみよう！
 
+
 # カンマで分割して、リストに代入
+
+
 # リストの要素数を変数に代入
 # リストの中身を出力
+print(line)
+
+lucky = random.randrange(len(line))
+
+print(line[lucky])
+
+
 # ランダムに選んだリストの要素を出力
